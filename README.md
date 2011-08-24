@@ -39,7 +39,9 @@ your global stats.
         -R, --reset          Reset stats
         -h, --help           output usage information
 
-    $ ko -i
+    $ cd my-git-repo
+
+    $ ko --install
      -> .git/hooks/prepare-commit-msg
      -> .git/hooks/commit-msg
 
