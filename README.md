@@ -21,56 +21,58 @@ your global stats.
 
 # Installation and example usage
 
-    $ npm install -g ko
+```bash
+$ npm install -g ko
 
-    $ ko --help 
-     
-      Usage: ko [options]
+$ ko --help 
+ 
+  Usage: ko [options]
 
-      Options:
+  Options:
 
-        -s, --sleep <hours>  Add sleep
-        -c, --coffee         Add coffee
-        -p, --soda           Add soda / pop
-        -r, --redbull        Add redbull
+    -s, --sleep <hours>  Add sleep
+    -c, --coffee         Add coffee
+    -p, --soda           Add soda / pop
+    -r, --redbull        Add redbull
 
-        -l, --list           Show current stats
-        -i, --install        Install pre-commit hook
-        -R, --reset          Reset stats
-        -h, --help           output usage information
+    -l, --list           Show current stats
+    -i, --install        Install pre-commit hook
+    -R, --reset          Reset stats
+    -h, --help           output usage information
 
-    $ cd my-git-repo
+$ cd my-git-repo
 
-    $ ko --install
-     -> .git/hooks/prepare-commit-msg
-     -> .git/hooks/commit-msg
+$ ko --install
+ -> .git/hooks/prepare-commit-msg
+ -> .git/hooks/commit-msg
 
-    $ ko -c 
-     
-    Hours of sleep: 0
-    Cups of coffee: 1 <<
-    Cans of soda: 0
-    Cans of redbull: 0
+$ ko -c 
+ 
+Hours of sleep: 0
+Cups of coffee: 1 <<
+Cans of soda: 0
+Cans of redbull: 0
 
-    $ ko -s 4 
-     
-    Hours of sleep: 4 <<
+$ ko -s 4 
+ 
+Hours of sleep: 4 <<
+Cups of coffee: 1
+Cans of soda: 0
+Cans of redbull: 0
+
+$ git commit -a -m 'quick commit message' 
+[master 4763e15] quick commit message
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+$ git show HEAD 
+commit 4763e15c07e679790319f6130027dd857bd0faa3
+Author: Wade Simmons
+Date:   Tue Aug 23 10:16:13 2011 -0700
+
+    quick commit message
+    
+    Hours of sleep: 4
     Cups of coffee: 1
     Cans of soda: 0
     Cans of redbull: 0
-
-    $ git commit -a -m 'quick commit message' 
-    [master 4763e15] quick commit message
-     1 files changed, 1 insertions(+), 1 deletions(-)
-
-    $ git show HEAD 
-    commit 4763e15c07e679790319f6130027dd857bd0faa3
-    Author: Wade Simmons
-    Date:   Tue Aug 23 10:16:13 2011 -0700
-
-        quick commit message
-        
-        Hours of sleep: 4
-        Cups of coffee: 1
-        Cans of soda: 0
-        Cans of redbull: 0
+```
