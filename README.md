@@ -15,8 +15,8 @@ records your current status in each commit message. Example:
         Cans of soda: 2
         Cans of redbull: 4
 
-The stats are stored in ~/.ko.json, so you can update your levels from any
-open terminal. Any git repo you install the commit hook to will then include
+The stats are stored in `~/.ko.json`, so you can update your levels from any
+open terminal. Any Git repo you install the commit hook to will then include
 your global stats.
 
 # Installation and example usage
