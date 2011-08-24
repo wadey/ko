@@ -1,0 +1,21 @@
+{
+  "author": "Wade Simmons <wade@wades.im> (http://wades.im/mons)",
+  "name": "ko",
+  "description": "Knockout Competition Stats Collector",
+  "homepage": "https://github.com/wadey/ko",
+  "version": "0.1.0",
+  "bin": {
+    "ko": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wadey/ko.git"
+  },
+  "engines": {
+    "node": "~v0.4.11"
+  },
+  "dependencies": {
+    "commander": "0.0.5"
+  },
+  "devDependencies": {}
+}
