@@ -19,11 +19,9 @@ The stats are stored in ~/.ko.json, so you can update your levels from any
 open terminal. Any git repo you install the commit hook to will then include
 your global stats.
 
-# Example usage
+# Installation and example usage
 
     $ npm install -g ko
-    ko@0.1.0 /usr/local/lib/node_modules/ko 
-    └── commander@0.0.5
 
     $ ko --help 
      
