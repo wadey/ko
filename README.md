@@ -1,7 +1,7 @@
 # ko - Knockout
 
 Knockout makes it fun and easy to record your sleep / caffeine consumption
-during a programing competition. Knockout installs a git commit hook that
+during a programming competition. Knockout installs a git commit hook that
 records your current status in each commit message. Example:
 
     commit 4763e15c07e679790319f6130027dd857bd0faa3
