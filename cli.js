@@ -10,6 +10,7 @@ program
   .option('-c, --coffee', 'Add coffee')
   .option('-p, --soda', 'Add soda / pop')
   .option('-r, --redbull', 'Add redbull\n')
+  .option('-b, --beer', 'Add beer\n')
 
   .option('-l, --list', 'Show current stats')
   .option('-i, --install', 'Install pre-commit hook')
@@ -21,6 +22,7 @@ var options = {
   coffee: 'Cups of coffee',
   soda: 'Cans of soda',
   redbull: 'Cans of redbull',
+  beer: 'Bottles of beer',
 }
 
 var takesArgs = {
@@ -66,7 +68,7 @@ if (program.list) {
 function add() {
   var found = optionKeys.some(function(option) {
     if (program[option]) {
-      stats[option] += program[option]
+      stats[option] = (stats[option] || 0) + program[option]
       return true
     }
   })
@@ -101,7 +103,7 @@ function save(stats) {
 
 function list() {
   console.log('\n' + optionKeys.map(function(key) {
-    var value = stats[key] + (stats[key] !== initial[key] ? ' <<' : '')
+    var value = (stats[key] || 0) + (stats[key] !== initial[key] ? ' <<' : '')
     return options[key] + ': ' + value
   }).join('\n'))
 }

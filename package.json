@@ -3,7 +3,7 @@
   "name": "ko",
   "description": "Knockout Competition Stats Collector",
   "homepage": "https://github.com/wadey/ko",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "preferGlobal": true,
   "bin": {
     "ko": "cli.js"
