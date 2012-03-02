@@ -14,6 +14,7 @@ records your current status in each commit message. Example:
         Cups of coffee: 3
         Cans of soda: 2
         Cans of redbull: 4
+        Bottles of beer: 1
 
 The stats are stored in `~/.ko.json`, so you can update your levels from any
 open terminal. Any Git repo you install the commit hook to will then include
@@ -33,6 +34,7 @@ your global stats.
         -c, --coffee         Add coffee
         -p, --soda           Add soda / pop
         -r, --redbull        Add redbull
+        -b, --beer           Add beer
 
         -l, --list           Show current stats
         -i, --install        Install pre-commit hook
@@ -51,6 +53,7 @@ your global stats.
     Cups of coffee: 1 <<
     Cans of soda: 0
     Cans of redbull: 0
+    Bottles of beer: 0
 
     $ ko -s 4 
      
@@ -58,6 +61,7 @@ your global stats.
     Cups of coffee: 1
     Cans of soda: 0
     Cans of redbull: 0
+    Bottles of beer: 0
 
     $ git commit -a -m 'quick commit message' 
     [master 4763e15] quick commit message
@@ -74,3 +78,4 @@ your global stats.
         Cups of coffee: 1
         Cans of soda: 0
         Cans of redbull: 0
+        Bottles of beer: 0
